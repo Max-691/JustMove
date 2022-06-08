@@ -24,4 +24,4 @@ extern.addEventListener('click', ()=>{
     else if(extern.style.backgroundColor="blue"){
         extern.style.backgroundColor="red";
     }
-})
+}
