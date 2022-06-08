@@ -1,0 +1,32 @@
+body{
+    background-color: rgba(0, 0, 0, 0.605);
+}
+
+main{
+    display: flex;
+    justify-content: space-between;
+}
+
+#default-div{
+    width: 35vw;
+    height: 50vh;
+    background-color: lavender;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#moved-div{
+    width: 35vw;
+    height: 50vh;
+    background-color:azure; 
+    display: flex;
+    justify-content: center;
+}
+
+.elements{
+    margin: 1rem;
+    background: blue;
+    width: 5rem;
+    height: 5rem;
+}
