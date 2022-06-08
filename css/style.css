@@ -30,3 +30,26 @@ main{
     width: 5rem;
     height: 5rem;
 }
+
+.extern{
+    width: 10rem;
+    height: 10rem;
+    background: red;
+}
+
+
+
+@keyframes divTransition {
+    0%{
+        transform: translateX(50%);
+    }
+    50%{
+        transform: translateX(0%);
+    }
+    25%{
+        transform: translateX(25);
+    }
+    0%{
+        transform: translateX(0);
+    }
+}
