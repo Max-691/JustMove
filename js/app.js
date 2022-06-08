@@ -6,7 +6,7 @@ for (const div of divElements) {
     div.addEventListener('click', ()=>{
         div.classList.add('translate')
 
-        if (div.parentNode == start) {
+        if (div.parentNode === start) {
             
             end.appendChild(div);
         }
@@ -18,10 +18,10 @@ for (const div of divElements) {
 
 const extern = document.querySelector('.extern');
 extern.addEventListener('click', ()=>{
-    if (extern.style.backgroundColor="red") {
+    if (extern.style.backgroundColor==="red") {
         extern.style.backgroundColor="blue";
     }
-    else if(extern.style.backgroundColor="blue"){
+    else if(extern.style.backgroundColor==="blue"){
         extern.style.backgroundColor="red";
     }
-}
+})
