@@ -1,16 +1,14 @@
-const defaultDiv = document.getElementById('default-div');
-const movedDiv = document.getElementById('moved-div');
+const start = document.getElementById('default-div');
+const end = document.getElementById('moved-div');
 const divElements = document.querySelectorAll('.elements');
 
-for (let i = 0; i < divElements.length; i++) {
-    divElements[i].addEventListener('click', ()=>{
-        if (defaultDiv.children === divElements[i]) {
-            movedDiv.appendChild(divElements[i]);
+for (const div of divElements) {
+    div.addEventListener('click', ()=>{
+        if (div.parentNode == start) {
+            end.appendChild(div);
         }
         else{
-            defaultDiv.appendChild(divElements[i])
-        }
-       
+            start.appendChild(div)
+        } 
     })
-
 }
